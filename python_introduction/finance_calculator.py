@@ -5,7 +5,7 @@ monthly_expenses = input("Enter your total monthly expenses: ")
 
 # Calculate Monthly Savings
 
-monthly_savings = int(monthly_income) - int(monthly_expenses)
+monthly_savings = float(monthly_income) - float(monthly_expenses)
 print("Your monthly savings are $" + str(monthly_savings) + ".")
 
 # Calculate the projected savings after one year.
