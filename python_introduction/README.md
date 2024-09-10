@@ -12,3 +12,6 @@ Demonstrate understanding of variable assignments and arithmetic operations by c
 
 ## future_age_calculator.py
 Practice receiving user input in Python and perform a simple arithmetic operation to calculate the user’s age in a future year.
+
+## finance_calculator.py
+Use user input, variables, and arithmetic operations to calculate and provide feedback on a user’s monthly savings and potential future savings without applying conditional statements.
