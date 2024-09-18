@@ -6,3 +6,6 @@ This calculator will prompt the user to enter two numbers and select an operatio
 
 ## multiplication_table.py
 This script will ask the user to enter a number, then use a for loop to print the multiplication table for that number from 1 to 10.
+
+## pattern_drawing.py
+This script will prompt the user to enter a positive integer, then use nested loops to print a square pattern of that size made of asterisks (*).
