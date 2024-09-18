@@ -9,3 +9,6 @@ This script will ask the user to enter a number, then use a for loop to print th
 
 ## pattern_drawing.py
 This script will prompt the user to enter a positive integer, then use nested loops to print a square pattern of that size made of asterisks (*).
+
+## daily_reminder.py
+This script will ask the user for a single task, its priority level, and if it is time-sensitive. The program will then provide a customized reminder for that task, demonstrating control flow and loops without relying on data structures to store multiple tasks.
