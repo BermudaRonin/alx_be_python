@@ -2,27 +2,24 @@ task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
 
-prefix = "Note"
-body = f""
-separator = " "
-message = "that requires immediate attention today!"
+reminder = ""
+
+
+match priority:
+    case "high":
+        reminder = f"'{task}' is a {priority} task"
+    case "medium":
+        reminder = f"'{task}' is a {priority} task"
+    case "low":
+        reminder = f"'{task}' is a {priority} task"
+    case _:
+        reminder = f"⚠️ '{task}' has no priority level"
 
 if time_bound == "yes":
-    prefix = "Reminder"
-    separator = " "
-    message = "that requires immediate attention today!"
+    reminder += " that requires immediate attention today!"
+    print("Reminder: " + reminder)
 else:
-    match priority:
-        case "high":
-            prefix = "Reminder"
-            separator = " "
-            message = "that requires immediate attention today!"
-        case "medium":
-            prefix = "Note"
-            message = "schedule it for later"
-        case "low":
-            prefix = "Note"
-            separator = ". "
-            message = "Consider completing it when you have free time."
+    reminder += ". Consider completing it when you have free time."
+    print("Note: " + reminder)
 
-print(f"{prefix}: '{task}' is a {priority} priority task{separator} {message}")
+
