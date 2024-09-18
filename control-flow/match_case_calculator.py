@@ -10,7 +10,7 @@ match operation:
         result = num1 - num2
         print("The result is " + str(result) + ".")
     case "*":
-        result = num1 + num2
+        result = num1 * num2
         print("The result is " + str(result) + ".")
     case "/":
         if num2 == 0:
