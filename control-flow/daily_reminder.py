@@ -3,7 +3,7 @@ priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
 
 prefix = "Note"
-body = f"'{task}' is a {priority} priority task"
+body = f""
 separator = " "
 message = "that requires immediate attention today!"
 
@@ -25,4 +25,4 @@ else:
             separator = ". "
             message = "Consider completing it when you have free time."
 
-print(prefix + ": " + body + separator + message)
+print(f"{prefix}: '{task}' is a {priority} priority task{separator} {message}")
