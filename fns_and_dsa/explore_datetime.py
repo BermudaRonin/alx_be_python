@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 def display_current_datetime():
-    print(f"Current date and time: {datetime.now()}")
+    print(f"Current date and time: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}")
 
 def calculate_future_date():
     days = int(input("Enter the number of days to add to the current date: "))
