@@ -11,7 +11,7 @@ class Operation(Enum):
         return ", ".join(operation.value for operation in cls)
 
 
-def perform_operation(num1: float, num2 : float, opearation : str) -> float:
+def perform_operation(num1, num2, opearation) -> float:
     match opearation:
         case Operation.ADD.value:
             return num1 + num2
