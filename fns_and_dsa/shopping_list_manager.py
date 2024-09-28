@@ -15,12 +15,12 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            item: str = input("▶▶ Enter item name: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
             print(f"▶ '{item}' is added successfully to shopping list")
             pass
         elif choice == "2":
-            item: str = input("▶▶ Enter item name: ")
+            item = input("Enter the item to add: ")
             if item not in shopping_list:
                 print(f"▶ '{item}' is missing from shopping list")
             else:
