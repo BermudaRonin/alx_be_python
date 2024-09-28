@@ -1,6 +1,5 @@
 from enum import Enum
 
-
 class Operation(Enum):
     ADD = "add"
     SUBTRACT = "subtract"
@@ -12,7 +11,7 @@ class Operation(Enum):
         return ", ".join(operation.value for operation in this)
 
 
-def perform_operation(num1=float, num2=float, opearation=str) -> float:
+def perform_operation(num1: float, num2 : float, opearation : str) -> float:
     match opearation:
         case Operation.ADD.value:
             return num1 + num2
