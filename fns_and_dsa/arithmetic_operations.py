@@ -7,8 +7,8 @@ class Operation(Enum):
     DIVIDE = "divide"
 
     @classmethod
-    def strings(this) -> str:
-        return ", ".join(operation.value for operation in this)
+    def toString(cls) -> str:
+        return ", ".join(operation.value for operation in cls)
 
 
 def perform_operation(num1: float, num2 : float, opearation : str) -> float:
@@ -22,6 +22,8 @@ def perform_operation(num1: float, num2 : float, opearation : str) -> float:
         case Operation.DIVIDE.value:
             if num2 == 0:
                 print("Division by zero is not allowed")
+                return None
             return num1 / num2
         case _:
-            print("Invalid operation. Please select one from : " + Operation.strings())
+            print("Invalid operation. Please select one from : " + Operation.toString())
+            return None
