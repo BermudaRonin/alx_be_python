@@ -11,8 +11,8 @@ class Operation(Enum):
         return ", ".join(operation.value for operation in cls)
 
 
-def perform_operation(num1, num2, opearation) -> float:
-    match opearation:
+def perform_operation(num1: float, num2: float, operation: str) -> float:
+    match operation:
         case Operation.ADD.value:
             return num1 + num2
         case Operation.SUBTRACT.value:
@@ -21,9 +21,7 @@ def perform_operation(num1, num2, opearation) -> float:
             return num1 * num2
         case Operation.DIVIDE.value:
             if num2 == 0:
-                print("Division by zero is not allowed")
-                return None
+                return "Division by zero is not allowed"
             return num1 / num2
         case _:
-            print("Invalid operation. Please select one from : " + Operation.toString())
-            return None
+            return "Invalid operation. Please select one from : " + Operation.toString()
