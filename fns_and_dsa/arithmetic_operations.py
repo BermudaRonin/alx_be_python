@@ -1,27 +1,14 @@
-from enum import Enum
-
-class Operation(Enum):
-    ADD = "add"
-    SUBTRACT = "subtract"
-    MULTIPLY = "multiply"
-    DIVIDE = "divide"
-
-    @classmethod
-    def toString(cls) -> str:
-        return ", ".join(operation.value for operation in cls)
-
-
 def perform_operation(num1: float, num2: float, operation: str) -> float:
     match operation:
-        case Operation.ADD.value:
+        case "add":
             return num1 + num2
-        case Operation.SUBTRACT.value:
+        case "subtract":
             return num1 - num2
-        case Operation.MULTIPLY.value:
+        case "multiply":
             return num1 * num2
-        case Operation.DIVIDE.value:
+        case "divide":
             if num2 == 0:
                 return "Division by zero is not allowed"
             return num1 / num2
         case _:
-            return "Invalid operation. Please select one from : " + Operation.toString()
+            return "Invalid operation"
