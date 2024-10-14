@@ -9,3 +9,7 @@ A script that defines a library system, utilizing inheritance and composition to
 ## polymorphism_demo.py
 
 A script that demonstrates polymorphism in Python by defining a base class Shape and two derived classes, Rectangle and Circle. The Shape class includes an area() method that raises a NotImplementedError, enforcing derived classes to implement their own area calculations. The Rectangle class overrides the area() method to compute its area using the formula length × width, while the Circle class implements its own area() method to calculate the area using the formula π × radius², utilizing the math module for accurate π representation. This structure highlights method overriding and polymorphic behavior in action.
+
+## class_static_methods_demo.py
+
+A script that demonstrates the use of class methods and static methods in Python, showcasing their differences and practical applications through a Calculator class. This class includes a static method for addition and a class method for multiplication, highlighting when and how to utilize the @staticmethod and @classmethod decorators.
